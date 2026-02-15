@@ -13,7 +13,7 @@ function tampilteks() {
         newText.style.color = 'red';
         body.append(newText);
     } else {
-        newText.style.color = 'red'; // ubah warna jadi merah lagi kalau udah ada
+        newText.style.color = 'red'; 
     }
 }
 
@@ -24,12 +24,3 @@ function gantiwarna() {
     }
 }
 
-
-// istilahnya yang let newText = null itukan dia nilainya kosong (teks nya gak ada)
-// baru di function tampilteks itu, jika nilai newText tidak ada maka buat element p dan isi teksnya Halo World
-// dan kasih teks warna merah, lalu tampilkan ke halaman body
-
-// baru yang gantiwarna kan teksnya udah ada tu, jadi (jika newText sudah ada nilainya maka ubah warnanya jadi biru)
-
-//nah disini tu kan awalnya dia let berarti bisa diubah
-// beda dengan const nilai nya tu constant alias gak boleh di rubah
