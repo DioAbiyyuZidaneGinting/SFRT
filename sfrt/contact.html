@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <div class="icon">
+            <img src="images/logoku.png" alt="">
+        </div>
+
+        <div class="menu-toggle" id="menu-toggle">
+            <i class='bx bx-menu'></i>
+        </div>
+
+        <ul>
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="service.html" class="nav-link">Services</a></li>
+            <li><a href="booking.html" class="nav-link">Booking</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+            <li><a href="signin.html" class="Masuk">Masuk/Daftar</a></li>
+            <li><button id="toggleBtn">
+                    <i class='bx bx-moon' id="iconDarkMode"></i>
+                </button></li>
+        </ul>
+    </nav>
+
+    <div class="container-contact">
+        <div class="header-contact">
+            <h1>Hubungi Kami</h1>
+            <p>Punya pertanyaan atau butuh bantuan? Tim support SFRT siap membantu Anda kapan saja!</p>
+        </div>
+
+        <div class="informasi-contact">
+            <div class="card-contact">
+                <div class="icon-contact">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+                <h2>Telepon</h2>
+                <h3>+62 895-2217-7567</h3>
+                <p>Hubungi kami 24/7</p>
+            </div>
+            <div class="card-contact">
+                <div class="icon-contact">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <h2>Email</h2>
+                <h3>info@sfrt.co.id</h3>
+                <p>Respon dalam 2 jam</p>
+            </div>
+            <div class="card-contact">
+                <div class="icon-contact">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                </div>
+                <h2>Alamat</h2>
+                <h3>Jl. Sudirman No. 123, Jakarta</h3>
+                <p>Kantor pusat kami</p>
+            </div>
+            <div class="card-contact">
+                <div class="icon-contact">
+                    <i class="fa-solid fa-clock"></i>
+                </div>
+                <h2>Jam Operasional</h2>
+                <h3>24 Jam / 7 Hari</h3>
+                <p>Layanan tanpa batas waktu</p>
+            </div>
+        </div>
+
+        <div class="kotak-contact">
+            <div class="kotak-pesan">
+                <h1><i class="fa-solid fa-message"></i> Kirim Pesan</h1>
+                <form action="">
+                    <div class="tempat-input">
+                        <div class="input-group">
+                            <label for="Nama">Nama Lengkap</label>
+                            <input type="text" placeholder="Masukkan nama lengkap">
+                        </div>
+                        <div class="input-group">
+                            <label for="Nama">Email</label>
+                            <input type="text" placeholder="Masukkan email">
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label for="Nama">Subjek</label>
+                        <input type="text" placeholder="Masukkan subjek pesan">
+                    </div>
+                    <div class="input-group">
+                        <label for="Nama">Pesan</label>
+                        <textarea id="pesan" rows="5" placeholder="Tulis pesan anda disini"></textarea>
+                    </div>
+                    <button type="submit" class="kirim-btn">
+                        <i class="fa-solid fa-paper-plane"></i> Kirim Pesan
+                    </button>
+                </form>
+            </div>
+
+            <div class="kotak-pertanyaan">
+                <h1>Pertanyaan Umum (FAQ)</h1>
+                <div class="pertanyaan">
+                    <h2>Bagaimana cara mendapat di SFRT</h2>
+                    <p>Anda bisa mendaftar dengan mengklik tombol "Daftar" di halaman utama, kemudian mengisi formulir
+                        dengan data yang diperlukan.</p>
+                </div>
+                <div class="pertanyaan">
+                    <h2>Apa saja metode pembayaran yang tersedia?</h2>
+                    <p>Kami menyediakan berbagai metode pembayaran digital seperti QRIS, GoPay, ShopeePay, DANA, OVO,
+                        dan bank transfer.</p>
+                </div>
+                <div class="pertanyaan">
+                    <h2>Berapa lama proses pengisian BBM?</h2>
+                    <p>Proses pengisian BBM rata-rata memakan waktu 3-5 menit setelah pembayaran dikonfirmasi.</p>
+                </div>
+                <div class="pertanyaan">
+                    <h2>Apakah layanan tersedia 24 jam?</h2>
+                    <p>Ya, layanan SFRT tersedia 24 jam sehari, 7 hari seminggu untuk kemudahan Anda.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-footer" id="Contact">
+            <div class="footer-content">
+                <div class="content1">
+                    <h2>ABOUT</h2>
+                    <p>SFRT adalah platform digital yang memudahkan pengguna dalam mengisi bahan bakar secara online.
+                        Kami menghadirkan efisiensi, transparansi, dan kenyamanan dalam setiap transaksi bahan bakar di
+                        SPBU modern berbasis teknologi.
+                    </p>
+                    <div class="Information">
+                        <p><i class="fa-solid fa-clock" style="color: #007BFF;"></i> 24 Jam/ 7 Hari</p>
+                        <p><i class="fa-solid fa-map-marker-alt" style="color: #007BFF;"></i> Jl. Sudirman No. 123,
+                            Jakarta</p>
+                    </div>
+                </div>
+                <div class="content2">
+                    <h2>CATEGORIES</h2>
+                    <ul>
+                        <li><a href="#">Pengisian BBM Online</a></li>
+                        <li><a href="#">Integrasi E-Wallet</a></li>
+                        <li><a href="#">Riwayat & Laporan Transaksi</a></li>
+                        <li><a href="#">Deteksi Jenis BBM Otomatis</a></li>
+                        <li><a href="#">Notifikasi Smart Reminder</a></li>
+                    </ul>
+                </div>
+                <div class="content3">
+                    <h2>SOCIAL MEDIA</h2>
+                    <ul>
+                        <li><a
+                                href="https://www.instagram.com/sfrt_22?utm_source=ig_web_button_share_sheet&igsh=bnMwdnRtMGRzMzRt"><i
+                                    class='bx bxl-instagram'></i>
+                                Instagram</a></li>
+                        <li><a
+                                href="https://api.whatsapp.com/send/?phone=6289522177567&text&type=phone_number&app_absent=0"><i
+                                    class='bx bxl-whatsapp'></i> Whatsapp</a></li>
+                        <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=dio13abiyyu@gmail.com"><i
+                                    class='bx bx-envelope'></i> Gmail</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="garis"></div>
+                <p>Copyright © Super Fast Refueling Technology. All rights reserved.
+                </p>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- script -->
+    <script>
+        const toggle = document.getElementById('menu-toggle');
+        const navLinks = document.querySelector('nav ul')
+
+        toggle.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+    </script>
+
+    <script>
+        const links = document.querySelectorAll('.nav-link');
+
+        const currentPage = window.location.pathname;
+
+        links.forEach(link => {
+            if (link.getAttribute('href') === currentPage.split('/').pop()) {
+                link.classList.add('active');
+            }
+        })
+    </script>
+
+    <script>
+        const btnWarna = document.getElementById('toggleBtn');
+        const icon = document.getElementById('iconDarkMode');
+
+        // === CEK DARK MODE SAAT HALAMAN DIMUAT ===
+        if (localStorage.getItem('darkMode') === 'enabled') {
+            document.body.classList.add('dark-mode');
+            icon.classList.replace('bx-moon', 'bx-sun');
+        }
+
+        // === EVENT TOGGLE DARK MODE ===
+        btnWarna.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+
+            // SIMPAN STATUS DARK MODE KE LOCALSTORAGE
+            if (document.body.classList.contains('dark-mode')) {
+                localStorage.setItem('darkMode', 'enabled');
+                icon.classList.replace('bx-moon', 'bx-sun');
+            } else {
+                localStorage.setItem('darkMode', 'disabled');
+                icon.classList.replace('bx-sun', 'bx-moon');
+            }
+        });
+    </script>
+
+</body>
+
+</html>

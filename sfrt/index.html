@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <div class="icon">
+            <img src="images/logoku.png" alt="">
+        </div>
+
+        <div class="menu-toggle" id="menu-toggle">
+            <i class='bx bx-menu'></i>
+        </div>
+
+        <ul>
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="service.html" class="nav-link">Services</a></li>
+            <li><a href="booking.html" class="nav-link">Booking</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+            <li><a href="signin.html" class="Masuk">Masuk/Daftar</a></li>
+            <li><button id="toggleBtn">
+                    <i class='bx bx-moon' id="iconDarkMode"></i>
+                </button></li>
+        </ul>
+    </nav>
+
+    <div class="container1">
+        <h1>Super Fast Refueling Technolgy</h1>
+        <h2>Pengisian BBM Online <br><span> Cepat & Terpercaya</span></h2>
+        <p>Find nearby gas stations, order fuel online, and experience the future of refueling</p>
+        <div class="tombol-aksi">
+            <a href="" class="btn1" onclick="handlePesan()">Pesan Sekarang</a>
+            <a href="" class="btn2">Pelajari Lebih Lanjut</a>
+        </div>
+
+        <div class="layanan">
+            <div class="card-layanan">
+                <div class="layanan-icon">
+                    <i class="fa-solid fa-truck"></i>
+
+                </div>
+                <h2>Pengiriman Cepat</h2>
+                <p>Pengiriman dalam 1-2 jam ke seluruh area layanan</p>
+            </div>
+            <div class="card-layanan">
+                <div class="layanan-icon">
+                    <i class='bx bx-time'></i>
+                </div>
+                <h2>Layanan 24/7</h2>
+                <p>Tersedia kapan saja, 24 jam sehari 7 hari seminggu</p>
+            </div>
+            <div class="card-layanan">
+                <div class="layanan-icon">
+                    <i class='bx bx-shield'></i>
+                </div>
+                <h2>Kualitas Terjamin</h2>
+                <p>BBM berkualitas tinggi dengan standar internasional</p>
+            </div>
+            <div class="card-layanan">
+                <div class="layanan-icon">
+                    <i class="fa-solid fa-map-marker-alt"></i>
+                </div>
+                <h2>Temukan SPBU Terdekat</h2>
+                <p>Temukan SPBU di Lokasi Terdekat Anda</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container2">
+        <h1>Jenis Bahan Bakar</h1>
+        <p>Pilih jenis bahan bakar yang sesuai dengan kebutuhan kendaraan Anda</p>
+        <div class="BBM">
+            <div class="card-bbm" style="background-color: #0aaa0d	;">
+                <div class="icons-bbm">
+                    <i class="fa-solid fa-gas-pump"></i>
+                </div>
+                <h2>Premium Gasoline</h2>
+                <p>Bensin premium dengan oktan tinggi untuk performa optimal kendaraan Anda</p>
+                <div class="price"> </div>
+                <h3>Rp. 16.000/Liter</h3>
+            </div>
+            <div class="card-bbm" style="background-color: #007BFF ;">
+                <div class="icons-bbm">
+                    <i class="fa-solid fa-gas-pump"></i>
+                </div>
+                <h2>Pertamax</h2>
+                <p>Bahan bakar berkualitas tinggi untuk efisiensi dan performa maksimal</p>
+                <div class="price"> </div>
+                <h3>Rp. 14.000/Liter</h3>
+            </div>
+            <div class="card-bbm" style="background-color: #FFA500 ;">
+                <div class="icons-bbm">
+                    <i class="fa-solid fa-gas-pump"></i>
+                </div>
+                <h2>Solar</h2>
+                <p>Solar berkualitas untuk kendaraan diesel dan mesin industri</p>
+                <div class="price"> </div>
+                <h3>Rp. 8.500/Liter</h3>
+            </div>
+            <div class="card-bbm" style="background-color: #C10000	 ;">
+                <div class="icons-bbm">
+                    <i class="fa-solid fa-gas-pump"></i>
+                </div>
+                <h2>Pertamax Turbo</h2>
+                <p>Bahan bakar premium untuk performa tinggi dan efisiensi maksimal</p>
+                <div class="price"> </div>
+                <h3>Rp. 15.000/Liter</h3>
+            </div>
+            <div class="card-bbm" style="background-color: #da17d7	 ;">
+                <div class="icons-bbm">
+                    <i class="fa-solid fa-gas-pump"></i>
+                </div>
+                <h2>Pertalite</h2>
+                <p>BBM dengan RON 90 yang memberikan efisiensi lebih baik dan ramah lingkungan.</p>
+                <div class="price"> </div>
+                <h3>Rp. 10.00/Liter</h3>
+            </div>
+            <div class="card-bbm" style="background-color: #9b00fc	 ;">
+                <div class="icons-bbm">
+                    <i class="fa-solid fa-gas-pump"></i>
+                </div>
+                <h2>Bio Solar</h2>
+                <p>BBM dengan RON 90 yang memberikan efisiensi lebih baik dan ramah lingkungan.</p>
+                <div class="price"> </div>
+                <h3>Rp. 12.500/Liter</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="container3">
+        <h1>Why Choose SFRT?</h1>
+        <p>Discover the advantages of using our online fuel booking service</p>
+        <div class="keunggulan">
+            <div class="card-keunggulan">
+                <div class="icons-keunggulan" style="background-color: #007BFF;">
+                    <i class='bx bx-mobile'></i>
+                </div>
+                <h2>Mobile App Integration</h2>
+                <p>Access all features through our user-friendly mobile application</p>
+            </div>
+            <div class="card-keunggulan">
+                <div class="icons-keunggulan" style="background-color: #ff8400;">
+                    <i class="fa-solid fa-clock"></i>
+                </div>
+                <h2>Mobile App Integration</h2>
+                <p>Access all features through our user-friendly mobile application</p>
+            </div>
+            <div class="card-keunggulan">
+                <div class="icons-keunggulan" style="background-color: #06aa1a;">
+                    <i class="fas fa-credit-card"></i>
+
+                </div>
+                <h2>Mobile App Integration</h2>
+                <p>Access all features through our user-friendly mobile application</p>
+            </div>
+            <div class="card-keunggulan">
+                <div class="icons-keunggulan" style="background-color: #8c00ff;">
+                    <i class="fas fa-medal"></i>
+                </div>
+                <h2>Mobile App Integration</h2>
+                <p>Access all features through our user-friendly mobile application</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container4">
+        <div class="kotak">
+            <div class="kotak-kiri">
+                <h1>About SFRT</h1>
+                <p>Smart Fuel Refill Technology (SFRT) is revolutionizing the way people refuel their vehicles. Our
+                    innovative platform connects drivers with nearby gas stations, enabling seamless online fuel
+                    ordering and pickup.<br><br>
+
+                    Founded in 2024, we're committed to making fuel management more convenient, efficient, and
+                    accessible for everyone. With our cutting-edge technology and user-friendly interface, we're
+                    transforming the traditional gas station experience.</p>
+                <div class="kotakbawah">
+                    <div class="kotak-kiri-kiri">
+                        <h2>Our Mission</h2>
+                        <p>To digitize and streamline fuel management for a better tomorrow.</p>
+                    </div>
+                    <div class="kotak-kiri-kanan">
+                        <h2>Our Vision</h2>
+                        <p>A world where refueling is smart, fast, and completely hassle-free.</p>
+                    </div>
+                </div>
+                <div class="ceo">
+                    <h2>Founder & CEO: <a href="https://dioabiyyuzidaneginting.github.io/portofolio/portofolio/">Dio
+                            Abiyyu Zidane Ginting</a></h2>
+                </div>
+
+            </div>
+            <div class="kotak-kanan">
+                <h2>Our Impact</h2>
+                <div class="kotakbesar">
+                    <div class="impact">
+                        <div class="icon-impact">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+                        <h3>50K+</h3>
+                        <p>Active Users</p>
+                    </div>
+                    <div class="impact">
+                        <div class="icon-impact">
+                            <i class="fa-solid fa-gas-pump"></i>
+                        </div>
+                        <h3>100+</h3>
+                        <p>Gas Stations</p>
+                    </div>
+                    <div class="impact">
+                        <div class="icon-impact">
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h3>4.8</h3>
+                        <p>App Rating</p>
+                    </div>
+                    <div class="impact">
+                        <div class="icon-impact">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <h3>99%</h3>
+                        <p>Uptime</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container5">
+        <h1>Nearby Gas Stations</h1>
+        <p>Find the closest SFRT stations and check real-time fuel availability</p>
+        <div class="location-input">
+            <div class="icon-map">
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <input type="text" placeholder="Enter your location">
+            <button><i class="fas fa-paper-plane"></i></button>
+        </div>
+        <div class="info">
+            <div class="card-spbu">
+                <h2>SFRT Station Central</h2>
+                <p>Jl. Sudirman No. 123, Jakarta Pusat</p>
+                <div class="info-spbu">
+                    <div class="info-item">
+                        <p><i class="bx bxs-plane-alt">0.5 km</i></p>
+                        <p><i class="bx bxs-star" style="color: #FFA500;">4.5</i></p>
+                        <p><i class="bx bxs-phone">+622112345678</i></p>
+                    </div>
+                    <div class="bbm">
+                        <div class="jenis-bbm">
+                            <div class="keterangan-bbm">
+                                <p><i class="fa-solid fa-gas-pump"></i> Premium</p>
+                                <p class="keterangan">Available</p>
+                            </div>
+                            <h3>Rp. 10.200/L</h3>
+                        </div>
+                        <div class="jenis-bbm">
+                            <div class="keterangan-bbm">
+                                <p><i class="fa-solid fa-gas-pump"></i> Premium</p>
+                                <p class="keterangan">Available</p>
+                            </div>
+                            <h3>Rp. 10.200/L</h3>
+                        </div>
+                        <div class="jenis-bbm">
+                            <div class="keterangan-bbm">
+                                <p><i class="fa-solid fa-gas-pump"></i> Premium</p>
+                                <p class="keterangan">Available</p>
+                            </div>
+                            <h3>Rp. 10.200/L</h3>
+                        </div>
+                        <div class="jenis-bbm">
+                            <div class="keterangan-bbm">
+                                <p><i class="fa-solid fa-gas-pump"></i> Premium</p>
+                                <p class="keterangan">Available</p>
+                            </div>
+                            <h3>Rp. 10.200/L</h3>
+                        </div>
+                    </div>
+                    <div class="tombolorder">
+                        <a href=""><button class="">Order Fuel</button></a>
+                        <a href=""><button class="">Get Direction</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-spbu">
+                <h2>SFRT Station Mall</h2>
+                <p>Jl. Thamrin No. 456, Jakarta Pusat</p>
+                <div class="info-spbu">
+                    <div class="info-item">
+                        <p><i class="bx bxs-plane-alt">0.5 km</i></p>
+                        <p><i class="bx bxs-star" style="color: #FFA500;">4.5</i></p>
+                        <p><i class="bx bxs-phone">+622112345678</i></p>
+                    </div>
+                    <div class="bbm">
+                        <div class="jenis-bbm">
+                            <div class="keterangan-bbm">
+                                <p><i class="fa-solid fa-gas-pump"></i> Premium</p>
+                                <p class="keterangan">Available</p>
+                            </div>
+                            <h3>Rp. 10.200/L</h3>
+                        </div>
+                        <div class="jenis-bbm">
+                            <div class="keterangan-bbm">
+                                <p><i class="fa-solid fa-gas-pump"></i> Premium</p>
+                                <p class="keterangan">Available</p>
+                            </div>
+                            <h3>Rp. 10.200/L</h3>
+                        </div>
+                        <div class="jenis-bbm">
+                            <div class="keterangan-bbm">
+                                <p><i class="fa-solid fa-gas-pump"></i> Premium</p>
+                                <p class="keterangan">Available</p>
+                            </div>
+                            <h3>Rp. 10.200/L</h3>
+                        </div>
+                        <div class="jenis-bbm">
+                            <div class="keterangan-bbm">
+                                <p><i class="fa-solid fa-gas-pump"></i> Premium</p>
+                                <p class="keterangan">Available</p>
+                            </div>
+                            <h3>Rp. 10.200/L</h3>
+                        </div>
+                    </div>
+                    <div class="tombolorder">
+                        <a href=""><button class="">Order Fuel</button></a>
+                        <a href=""><button class="">Get Direction</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-spbu">
+                <h2>SFRT Station Mall</h2>
+                <p>Jl. Thamrin No. 456, Jakarta Pusat</p>
+                <div class="info-spbu">
+                    <div class="info-item">
+                        <p><i class="bx bxs-plane-alt">0.5 km</i></p>
+                        <p><i class="bx bxs-star" style="color: #FFA500;">4.5</i></p>
+                        <p><i class="bx bxs-phone">+622112345678</i></p>
+                    </div>
+                    <div class="bbm">
+                        <div class="jenis-bbm">
+                            <div class="keterangan-bbm">
+                                <p><i class="fa-solid fa-gas-pump"></i> Premium</p>
+                                <p class="keterangan">Available</p>
+                            </div>
+                            <h3>Rp. 10.200/L</h3>
+                        </div>
+                        <div class="jenis-bbm">
+                            <div class="keterangan-bbm">
+                                <p><i class="fa-solid fa-gas-pump"></i> Premium</p>
+                                <p class="keterangan">Available</p>
+                            </div>
+                            <h3>Rp. 10.200/L</h3>
+                        </div>
+                        <div class="jenis-bbm">
+                            <div class="keterangan-bbm">
+                                <p><i class="fa-solid fa-gas-pump"></i> Premium</p>
+                                <p class="keterangan">Available</p>
+                            </div>
+                            <h3>Rp. 10.200/L</h3>
+                        </div>
+                        <div class="jenis-bbm">
+                            <div class="keterangan-bbm">
+                                <p><i class="fa-solid fa-gas-pump"></i> Premium</p>
+                                <p class="keterangan">Available</p>
+                            </div>
+                            <h3>Rp. 10.200/L</h3>
+                        </div>
+                    </div>
+                    <div class="tombolorder">
+                        <a href=""><button class="">Order Fuel</button></a>
+                        <a href=""><button class="">Get Direction</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    </div>
+
+    <div class="container6">
+        <div class="header">
+            <h1>Hubungi kami</h1>
+            <p>Tim Customer service kami siap membantu Anda 24/7</p>
+        </div>
+        <div class="contact">
+            <div class="contact-kiri">
+                <h2>Informasi Kontak</h2>
+                <div class="kontak-box">
+                    <div class="ikon-bulat" style="background-color: #65d5f4ad;     padding: 10px;
+                            border-radius: 10px;     color: #3a08ff;">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="teks-kontak">
+                        <strong>Email</strong>
+                        <p>info@sfrt.com</p>
+                    </div>
+                </div>
+                <div class="kontak-box">
+                    <div class="ikon-bulat" style="background-color: #8dff78;     padding: 10px;
+                            border-radius: 10px;     color: #08540b;">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="teks-kontak">
+                        <strong>Telepon</strong>
+                        <p>+62-895-2217-7567</p>
+                    </div>
+                </div>
+                <div class="kontak-box">
+                    <div class="ikon-bulat" style="background-color: #fab380d6;     padding: 10px;
+                            border-radius: 10px; color: #ff5e00;">
+                        <i class="fas fa-map-location"></i>
+                    </div>
+                    <div class="teks-kontak">
+                        <strong>Alamat</strong>
+                        <p>Jl. Sudirman No. 123
+                            Jakarta Selatan </p>
+                    </div>
+                </div>
+                <div class="kontak-box">
+                    <div class="ikon-bulat" style="background-color: #f8acffd6;     padding: 10px;
+                            border-radius: 10px; color: #bb00ff;">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="teks-kontak">
+                        <strong>Jam Operasional</strong>
+                        <p>24 Jam / 7 Hari Seminggu</p>
+                    </div>
+                </div>
+                <div class="kotak-FAQ">
+                    <h1>Need Quick Help?</h1>
+                    <p>Check out out FAQ section or contact our support team for immediate assistance</p>
+                    <a href=""><Button>View FAQ</Button></a>
+                </div>
+            </div>
+            <div class="contact-kanan">
+                <h2>Kirim Pesan</h2>
+                <form class="input-pesan" action="#" method="post">
+                    <label for="nama">Nama Lengkap</label>
+                    <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required />
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="nama@email.com" required />
+
+                    <label for="subjek">Subjek</label>
+                    <select id="subjek" name="subjek" required>
+                        <option value="" disabled selected>Pilih Subjek</option>
+                        <option value="pertanyaan">Pertanyaan Pesanan</option>
+                        <option value="keluhan">Keluhan Layanan</option>
+                        <option value="keluhan">Saran & Masukkan</option>
+                        <option value="keluhan">Kerjasama</option>
+                        <option value="lainnya">Lainnya</option>
+                    </select>
+
+                    <label for="pesan">Pesan</label>
+                    <textarea name="pesan" id="pesan" rows="5" placeholder="Tulis Pesan anda disini"></textarea>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-footer" id="Contact">
+            <div class="footer-content">
+                <div class="content1">
+                    <h2>ABOUT</h2>
+                    <p>SFRT adalah platform digital yang memudahkan pengguna dalam mengisi bahan bakar secara online.
+                        Kami menghadirkan efisiensi, transparansi, dan kenyamanan dalam setiap transaksi bahan bakar di
+                        SPBU modern berbasis teknologi.
+                    </p>
+                    <div class="Information">
+                        <p><i class="fa-solid fa-clock" style="color: #007BFF;"></i> 24 Jam/ 7 Hari</p>
+                        <p><i class="fa-solid fa-map-marker-alt" style="color: #007BFF;"></i> Jl. Sudirman No. 123,
+                            Jakarta</p>
+                    </div>
+                </div>
+                <div class="content2">
+                    <h2>CATEGORIES</h2>
+                    <ul>
+                        <li><a href="#">Pengisian BBM Online</a></li>
+                        <li><a href="#">Integrasi E-Wallet</a></li>
+                        <li><a href="#">Riwayat & Laporan Transaksi</a></li>
+                        <li><a href="#">Deteksi Jenis BBM Otomatis</a></li>
+                        <li><a href="#">Notifikasi Smart Reminder</a></li>
+                    </ul>
+                </div>
+                <div class="content3">
+                    <h2>SOCIAL MEDIA</h2>
+                    <ul>
+                        <li><a
+                                href="https://www.instagram.com/sfrt_22?utm_source=ig_web_button_share_sheet&igsh=bnMwdnRtMGRzMzRt"><i
+                                    class='bx bxl-instagram'></i>
+                                Instagram</a></li>
+                        <li><a
+                                href="https://api.whatsapp.com/send/?phone=6289522177567&text&type=phone_number&app_absent=0"><i
+                                    class='bx bxl-whatsapp'></i> Whatsapp</a></li>
+                        <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=dio13abiyyu@gmail.com"><i
+                                    class='bx bx-envelope'></i> Gmail</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="garis"></div>
+                <p>Copyright © Super Fast Refueling Technology. All rights reserved.
+                </p>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <!-- KUMPULAANNN  SCRIPT -->
+    <!-- SCRIPT NAVBAR -->
+    <script>
+        const toggle = document.getElementById('menu-toggle');
+        const navLinks = document.querySelector('nav ul');
+
+        toggle.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+    </script>
+
+    <!-- SCRIPT HARUS LOGIN DULU BARU BISA -->
+    <script>
+        function handlePesan() {
+            const isLoggedIn = localStorage.getItem('isLoggedIn');
+            if (isLoggedIn === 'true') {
+                window.location.href = 'form-pemesanan.html'; // Halaman form pengisian BBM
+            } else {
+                alert('Silakan login atau daftar terlebih dahulu!');
+                window.location.href = 'signin.html';
+            }
+        }
+    </script>
+
+    <!-- Ini biar pas navbarnya diklik akan ada warna di teks nya untuk menandakan sedang di halaman tersebut -->
+    <script>
+        const links = document.querySelectorAll('.nav-link');
+        const currentPage = window.location.pathname;
+
+        links.forEach(link => {
+            if (link.getAttribute('href') === currentPage.split('/').pop()) {
+                link.classList.add('active');
+            }
+        });
+    </script>
+
+    <!-- untuk tema gelap terang -->
+    <script>
+        const btnWarna = document.getElementById('toggleBtn');
+        const icon = document.getElementById('iconDarkMode');
+
+        // === CEK DARK MODE SAAT HALAMAN DIMUAT ===
+        if (localStorage.getItem('darkMode') === 'enabled') {
+            document.body.classList.add('dark-mode');
+            icon.classList.replace('bx-moon', 'bx-sun');
+        }
+
+        // === EVENT TOGGLE DARK MODE ===
+        btnWarna.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+
+            // SIMPAN STATUS DARK MODE KE LOCALSTORAGE
+            if (document.body.classList.contains('dark-mode')) {
+                localStorage.setItem('darkMode', 'enabled');
+                icon.classList.replace('bx-moon', 'bx-sun');
+            } else {
+                localStorage.setItem('darkMode', 'disabled');
+                icon.classList.replace('bx-sun', 'bx-moon');
+            }
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <div class="icon">
+            <img src="images/logoku.png" alt="">
+        </div>
+
+        <div class="menu-toggle" id="menu-toggle">
+            <i class='bx bx-menu'></i>
+        </div>
+
+
+        <ul>
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="service.html" class="nav-link">Services</a></li>
+            <li><a href="booking.html" class="nav-link">Booking</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+            <li><a href="signin.html" class="Masuk">Masuk/Daftar</a></li>
+            <li><button id="toggleBtn">
+                    <i class='bx bx-moon' id="iconDarkMode"></i>
+                </button></li>
+        </ul>
+    </nav>
+
+    <div class="container-booking">
+        <h1>Silahkan Login Terlebih dahulu</h1>
+        <a href="index.html">Kembali ke Beranda</a>
+    </div>
+
+    <footer>
+        <div class="container-footer" id="Contact">
+            <div class="footer-content">
+                <div class="content1">
+                    <h2>ABOUT</h2>
+                    <p>SFRT adalah platform digital yang memudahkan pengguna dalam mengisi bahan bakar secara online.
+                        Kami menghadirkan efisiensi, transparansi, dan kenyamanan dalam setiap transaksi bahan bakar di
+                        SPBU modern berbasis teknologi.
+                    </p>
+                    <div class="Information">
+                        <p><i class="fa-solid fa-clock" style="color: #007BFF;"></i> 24 Jam/ 7 Hari</p>
+                        <p><i class="fa-solid fa-map-marker-alt" style="color: #007BFF;"></i> Jl. Sudirman No. 123,
+                            Jakarta</p>
+                    </div>
+                </div>
+                <div class="content2">
+                    <h2>CATEGORIES</h2>
+                    <ul>
+                        <li><a href="#">Pengisian BBM Online</a></li>
+                        <li><a href="#">Integrasi E-Wallet</a></li>
+                        <li><a href="#">Riwayat & Laporan Transaksi</a></li>
+                        <li><a href="#">Deteksi Jenis BBM Otomatis</a></li>
+                        <li><a href="#">Notifikasi Smart Reminder</a></li>
+                    </ul>
+                </div>
+                <div class="content3">
+                    <h2>SOCIAL MEDIA</h2>
+                    <ul>
+                        <li><a
+                                href="https://www.instagram.com/sfrt_22?utm_source=ig_web_button_share_sheet&igsh=bnMwdnRtMGRzMzRt"><i
+                                    class='bx bxl-instagram'></i>
+                                Instagram</a></li>
+                        <li><a
+                                href="https://api.whatsapp.com/send/?phone=6289522177567&text&type=phone_number&app_absent=0"><i
+                                    class='bx bxl-whatsapp'></i> Whatsapp</a></li>
+                        <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=dio13abiyyu@gmail.com"><i
+                                    class='bx bx-envelope'></i> Gmail</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="garis"></div>
+                <p>Copyright © Super Fast Refueling Technology. All rights reserved.
+                </p>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+    <!-- Script -->
+    <script>
+        const toggle = document.getElementById('menu-toggle');
+        const navLinks = document.querySelector('nav ul');
+
+        toggle.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        })
+    </script>
+
+    <script>
+        const links = document.querySelectorAll('.nav-link');
+        const currentPage = window.location.pathname;
+
+        links.forEach(link => {
+            if (link.getAttribute('href') === currentPage.split('/').pop()) {
+                link.classList.add('active');
+            }
+        })
+    </script>
+
+    <script>
+        const btnWarna = document.getElementById('toggleBtn');
+        const icon = document.getElementById('iconDarkMode');
+
+        // === CEK DARK MODE SAAT HALAMAN DIMUAT ===
+        if (localStorage.getItem('darkMode') === 'enabled') {
+            document.body.classList.add('dark-mode');
+            icon.classList.replace('bx-moon', 'bx-sun');
+        }
+
+        // === EVENT TOGGLE DARK MODE ===
+        btnWarna.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+
+            // SIMPAN STATUS DARK MODE KE LOCALSTORAGE
+            if (document.body.classList.contains('dark-mode')) {
+                localStorage.setItem('darkMode', 'enabled');
+                icon.classList.replace('bx-moon', 'bx-sun');
+            } else {
+                localStorage.setItem('darkMode', 'disabled');
+                icon.classList.replace('bx-sun', 'bx-moon');
+            }
+        });
+    </script>
+
+
+
+
+</body>
+
+</html>
