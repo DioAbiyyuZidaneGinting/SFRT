@@ -248,7 +248,7 @@
     </script>
 
 
-    <!-- Ini biar pas navbarnya diklik akan ada warna di teks nya untuk menandakan sedang di halaman tersebut -->
+    
     <script>
         const links = document.querySelectorAll('.nav-link');
         const currentPage = window.location.pathname;
@@ -264,17 +264,17 @@
         const btnWarna = document.getElementById('toggleBtn');
         const icon = document.getElementById('iconDarkMode');
 
-        // === CEK DARK MODE SAAT HALAMAN DIMUAT ===
+        
         if (localStorage.getItem('darkMode') === 'enabled') {
             document.body.classList.add('dark-mode');
             icon.classList.replace('bx-moon', 'bx-sun');
         }
 
-        // === EVENT TOGGLE DARK MODE ===
+        
         btnWarna.addEventListener('click', () => {
             document.body.classList.toggle('dark-mode');
 
-            // SIMPAN STATUS DARK MODE KE LOCALSTORAGE
+            
             if (document.body.classList.contains('dark-mode')) {
                 localStorage.setItem('darkMode', 'enabled');
                 icon.classList.replace('bx-moon', 'bx-sun');
@@ -286,5 +286,6 @@
     </script>
 
 </body>
+
 
 </html>
